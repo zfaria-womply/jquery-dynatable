@@ -423,7 +423,7 @@
       }
 
       obj.$element.find(settings.table.bodyRowSelector).remove();
-      obj.$element.append(rows);
+      obj.$element.find("tbody").append(rows);
 
       obj.$element.trigger('dynatable:afterUpdate', rows);
     };
